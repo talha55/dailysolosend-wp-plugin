@@ -1,0 +1,1 @@
+# dailysolosend-wp-plugin
