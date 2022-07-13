@@ -33,10 +33,12 @@ class Solo_Send_Form_Activator {
 		global $wpdb;    
 maybe_create_table( $wpdb->prefix . 'paypal_settings', 'CREATE TABLE MyGuests (
 	ID INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-	firstname VARCHAR(30) NOT NULL,
-	lastname VARCHAR(30) NOT NULL,
-	email VARCHAR(50),
-	reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+	currency_symbol VARCHAR(30) NOT NULL,
+	currency VARCHAR(30) NOT NULL,
+	paypal_account VARCHAR(50) NOT NULL,
+	payza_email VARCHAR(50) NULL,
+	contact_email VARCHAR(200) NOT NULL,
+	date_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 	)' );
 
 	}
